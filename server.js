@@ -4,7 +4,8 @@ const fs = require("fs");
 
 // Initialize our app variable by setting it to the value of express()
 const app = express();
-const PORT = 3001;
+// listens to server port or if no server use localhost 3001
+const PORT = process.env.PORT || 3001;
 
 // middleware
 // Sets up the Express app to handle data parsing
